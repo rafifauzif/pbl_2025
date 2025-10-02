@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="profil.html">Profile</a>
+      <a href="contact.html">Contact</a>
+      <a href="form.html">Form</a>
+    </nav>
+    <div class="form">
+      <h2>Pendaftaran Pelatihan Web Menggunakan Node JS dan React</h2>
+      <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Data Diri Peserta</legend>
+
+          <label for="nama">Nama Lengkap:</label><br />
+          <input type="text" id="nama" name="nama" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="telepon">Nomor Telepon (WhatsApp):</label><br />
+          <input type="tel" id="telepon" name="telepon" required /><br /><br />
+
+          <label>Jenis Kelamin:</label><br />
+          <input type="radio" id="pria" name="gender" value="Pria" />
+          <label for="pria">Pria</label>
+          <input type="radio" id="wanita" name="gender" value="Wanita" />
+          <label for="wanita">Wanita</label><br />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Pilihan Pelatihan</legend>
+          <label for="sesi">Pilih Sesi Pelatihan:</label><br />
+          <select id="sesi" name="sesi" required>
+            <option value="">-- Pilih Salah Satu --</option>
+            <option value="pagi">Sesi Pagi</option>
+            <option value="siang">Sesi Siang</option>
+            <option value="malam">Sesi Malam</option></select
+          ><br /><br />
+
+          <label>Sumber Informasi (boleh pilih lebih dari satu):</label><br />
+          <input
+            type="checkbox"
+            id="media"
+            name="sumber[]"
+            value="Media Sosial"
+          />
+          <label for="media">Media Sosial</label><br />
+
+          <input
+            type="checkbox"
+            id="teman"
+            name="sumber[]"
+            value="Rekomendasi Teman"
+          />
+          <label for="teman">Rekomendasi Teman</label><br />
+
+          <input
+            type="checkbox"
+            id="iklan"
+            name="sumber[]"
+            value="Iklan Online"
+          />
+          <label for="iklan">Iklan Online</label><br />
+        </fieldset>
+        <br />
+
+        <label for="catatan">Catatan Tambahan (Opsional):</label><br />
+        <textarea id="catatan" name="catatan" rows="4" cols="40"></textarea
+        ><br /><br />
+
+        <button class="button" type="submit">Daftar Sekarang</button>
+        <button class="button" type="reset">Bersihkan Formulir</button>
+      </form>
+    </div>
+  </body>
+</html>
